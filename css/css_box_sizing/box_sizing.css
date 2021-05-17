@@ -1,0 +1,12 @@
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.item:first-child{
+  border : 4px solid red;
+  padding:20px;
+  /*border-box를 사용하게 되면 width 100px이 적용됨*/
+  box-sizing: border-box;
+}

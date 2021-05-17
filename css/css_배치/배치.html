@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+  <link rel="stylesheet" href="./배치.css">
+</head>
+<body>
+  <!--
+    position : 요소의 위치 지정 기준
+     - top, bottom, left, right, z-index
+     - 기본 값 : static, 기준 없음, 배치 불가
+     - relative : 요소 자기 자신을 기준
+     - absolute : 위치 상 부모 요소를 기준 단, 부모의 요소에 relative를 해줘야한다
+     - fixed : 뷰포트(브라우저)를 기준
+     - sticky : 스크롤 영역 기준(자주 않씀)
+
+    top, bottom, left, right : 요소의 각 방향별 거리 지정
+     - 기본 값 : 브라우저가 계산
+
+    요소 쌓임 순서(Stack order) : 어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지) 결정
+     1. 요소에 position 속성의 값이 있는 경우 위에 쌓임.(기본 값 static 제외) relative, absolute
+     2. 1번 조건이 같은 경우, z-index 속성의 숫자 값이 높을 수록 위에 쌓임
+     3. 1번과 2번 조건까지 같은 경우, HTML의 다음 구조일 수록(나중에 작성된 순서일 수록) 위에 쌓임
+
+    position을 사용하면 요소의 display가 변경됨
+     - position 속성의 값으로 absolute, fixed가 지정된 요소는 display속성이 block으로 변경됨
+  -->
+  <div class="wrap">
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </div>
+
+  <br>
+  <br><br>
+  <br><br>
+  <br>
+
+  <span>123</span>
+
+</body>
+</html>

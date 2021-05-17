@@ -1,0 +1,57 @@
+<!--
+  DOCTYPE : 마크업 언어에서 문서 형식을 정의, 웹 브라우저가 HTML버전의 해석 방식으로
+  페이지를 이해하면 되는지를 알려주는 용도. 
+  즉, 문서의 HTML버전을 지정한다. HTML5가 표준임
+  만약 <!DOCTYPE html PUBLIC "-//W3C".... 이면 XTML이다.
+-->
+<!--
+  <html> : 문서의 전체 범위, HTML문서가 어디서 시작하고 어디서 끝나는지 알려주는 역할
+  <head> : 문서의 정보를 나타내는 범위, 웹 페이지의(눈에) 보이지 않는 정보를 작성하는 범위(css, 제목, 사용할 파일 위치 등..)
+  <body> : 문서의 구조를 나타내는 범위, 웹 페이지의(눈에) 보여지는 구조를 작성하는 범위(로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지 등..)
+-->
+<!--
+  <title> : HTML 문서의 제목을 정의
+  <link > : 외부 문서를 가져와 연결할 때 사용(대부분 css파일)
+    <link rel=""> : 가져올 문서와의 관계 (속성의 값은 정해져 있음 icon(보통 favicon.png의 이름으로 사용), stylesheet 등..)
+    <link href=""> : 가져올 문서의 경로 (./ : index.html을 기준의 경로)
+  <style> : CSS를 HTML 문서 안에서 작성하는 경우에 사용한다. 
+  <script src=""> : 1. 자바스크립트(JS)파일을 외부에서 가져오는 경우
+                    2. 자바스크립트(JS)를 HTML문서 안에서 작성하는 경우 ex) <script>console.log('console test')</script>
+  <meta /> : HTML 문서의 제작자, 내용, 키워드같은 여러 정보를 검색엔진이나 브라우저에게 제공
+    <meta name=""> : 정보의 종류 ex) viewport : 웹 페이지가 출력되는 영역(모바일 장치에 해당사항)
+    <meta content=""> : 정보의 값 ex) width=device-width, initial-scale=1.0
+    <meta charset=""> : 문자 인코딩 방식
+  -->
+  <!--
+    <img src="" alt=""> : src는 경로 alt는 무조건 작성해야함, 나오지 않을 경우에 입력한 텍스트가 나옴
+  -->
+  <!--
+    상대 경로 : ./ (생략 가능), ../ (상위 폴더로 올라감)
+    절대 경로 : http (https) 원격 경로, / (//) 루트 경로 
+    localhost : 우리의 환경
+    루트 경로 : 프로젝트 파일을 들어오자 마자 나오는 경로 (현재 기준 index.html, css폴더, imgs폴더, js폴더)
+    
+  -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이틀바꾼다</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <style>
+      div {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <!-- <div>Hello world!</div>
+    <!-- <div>Hello world!</div>
+    <img src="./imgs/logo.png" alt="error"> -->
+    <a href="https://naver.com">NAVER</a>
+    <a href="/about">About</a>
+    <a href="/login">Login</a>
+  </body>
+</html>

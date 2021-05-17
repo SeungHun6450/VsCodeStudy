@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+  <!--css초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+</head>
+<body>
+  <!--
+  width, height : 요소의 가로, 세로 크기를 지정
+  - auto : 브라우저가 너비를 계산, 기본 값 
+  - 단위 : px,em,vw등 단위 지정
+  
+  span : 인라인요소, 가로 세로 auto로 포함한 콘텐츠 크기만큼 자동으로 줄어들음
+  div : 블록요소, width : 부모 요소의 크기만큼 최대의 길이만큼 자동으로 늘어남, height : 자동으로 줄어들음
+  
+  max-width, max-height : 요소가 커질 수 있는 최대 가로/세로 너비
+  - none : 최대 너비 제한 없음, 기본 값
+  min-width, min-height : 요소가 작아질 수 있는 최소 가로/세로 너비
+  - 0 : 최소 너비 제한 없음, 기본 값
+  -->
+  <div>Hellow</div>
+  
+  <br><br>
+  <!--인라인 요소(글자제어 용도)이기 때문에 가로 세로 너비가 적용되지 않는다-->
+  <span>Hellow</span> 
+
+  <br><br>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+  <link rel="stylesheet" href="./변환.css">
+</head>
+<body>
+  <!--
+    transform : 변환함수1 2 3...;
+    원근법 이동 크기 회전 기울임
+
+    1. 2D 변환 함수
+    원래는 matrix(n,n,n,n,n,n) 2차원 변환효과를 사용하지만
+    밑을 이용해 사용하고 실제로는 matirx로 들어간다
+      - 단위(px) -
+     - translate(x,y) : 이동(x축, y축)
+     - translateX(x) : 이동(x축)
+     - translateY(y) : 이동(y축)
+
+      - 단위(없음, 배수) -
+     - scale(x,y) : 크기(x축, y축)
+
+      - 단위(deg) -
+     - rotate(degree) : 회전(각도)
+     - skewX(x) : 기울임(x축)
+     - skewY(y) : 기울임(y축)
+     
+    2. 3D 변환 함수
+      - 단위(deg) -
+     - rotateX(x) : 회전(x축)
+     - rotateY(y) : 회전(y축)
+    
+      - 단위(px) -
+     - perspective(n) : 원근법(거리), 내가 어느 거리에서 원근법으로 볼 것인지를 의미
+       ★transform : perspective() rotate 처럼 perspective를 맨 앞에 써야 한다
+    
+    변환(2)강의
+    perspective : 하위 요소를 관찰하는 원근 거리를 지정, 단위 px등으로 지정, ★속성
+     - pespective : px; | 관찰 대상의 부모 | perspective-origin
+     - transform : perspective(px); | 관찰 대상 | transform-origin
+      
+    backface-visibility : 3D 변환으로 회전된 요소의 뒷면 숨김 여부
+     - visible : 기본 값, 뒷면 보임
+     - hidden : 숨김
+     ex) transform : rotateY(180deg) 로 가를 뒤집으면 뒤집은채로 보임
+    -->
+ 
+    <!--변환1-->
+    <!-- <div class="container">
+      <div class="item">AB</div>
+    </div> -->
+
+    <!--변환2-->
+    <div class="container">
+      <div class="item">박</div>
+    </div>
+
+</body>
+</html>

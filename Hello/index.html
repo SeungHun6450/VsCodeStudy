@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <script defer src="./data.js"></script>
+</head>
+<body>
+  <!--
+    inline 요소 : 글자를 만들기 위한 요소들
+    block 요소 : 상자(레이아웃)를 만들기 위한 요소들
+    -inline 요소-
+    ★포함한 콘텐츠 크기만큼 자동으로 줄어든다
+    ★가로,세로 사이즈를 조절할 수 없다(width, height), 좌우 여백은 정상 작용, 위 아래여백은 작용x
+    ★글자 요소에 전부 적용되는 이야기
+    ★인라인 요소 안에 블럭 요소를 넣을 수 없다
+    1. <span> (inline) : 인라인요소, 특별한 의미가 없는 구분을 위한 요소
+      <span>EH</span><span>He</span>시 EHHe 붙혀져서 나옴, 요소가 수평으로 쌓임
+    2. <img src="이미지 경로" alt="이미지 이름"> : 이미지를 삽입하는 요소, ★src와 alt는 필수 속성
+    3. <a href="링크URL" target="링크URL의 표시(브라우저탭)위치"></a> : 다른/같은 페이지로 이동하는 하이퍼링크를 지정하는 요소.
+    4. <br> : 줄바꿈 요소
+    5. <label> : 라벨 가능 요소(input) 의 제목
+
+    -block요소-
+     부모 요소의 크기만큼 자동으로 늘어난다.
+    ★가로 너비는 자동으로 늘어나려고 한다.
+    ★블럭 요소 안에 인라인요소, 블럭요소 전부 넣을 수 있다.
+    1. <div> (block) : 블럭요소, 특별한 의미가 없는 구분을 위한 요소, 요소가 수직으로 쌓인다.
+    2. <p> : 문장을 의미하는 요소
+    3. <h1> ~ <h6> : 제목을 의미하는 요소 숫자가 작을수록 더 중요한 제목을 정의
+    4. <ul>, <li> : 순서가 필요없는 목록의 집합, 목록 내 각 항목
+
+   -table 요소-
+    1. <table> : 표 요소, 행과 열의 집합 
+ 
+    - 공통 요소 -
+    1. <input type="" value=""> : 베이스는 인라인 요소, 블럭요소 특징을 가짐
+   
+    - 전역 속성 -
+    <태그 title="설명"> : 요소의 ★정보-설명을 지정
+    <태그 style="스타일"> : 요소에 적용할 ★스타일(CSS)을 지정
+    <태그 class="이름"> : 요소를 지칭하는 ★중복 가능한 이름 
+    <태그 id="이름"> : 요소를 지칭하는 ★고유한 이름
+    <태그 data-이름="데이터"> : 요소에 ★데이터를 지정
+    ★<script defer src=""></script> : HTML구조가 준비된 후 JS를 해석하겠다는 의미
+  -->
+    <a href="https://naver.com" target="_blank" title="네이버">NAVER</a>
+    <a href="https://google.com">GOOGLE</a>
+
+    <!-- 애국가 -->
+    <p>
+      <span id="abc">동해물과</span> <span class="red">백두산이</span> 마르고 닳도록<br>
+      하느님이 보우하사 <span id="def" class="red">우리나라</span> 만세
+    </p>
+
+    <input type="text" value="heropy" placeholder="이름을 입력하세요"/>
+    <input type="checkbox"/>
+
+    <br>
+    <label>
+      <input type="checkbox" checked/>
+      Apple
+    </label>
+    <label>
+      <input type="checkbox" checked/>
+      Banana
+    </label>
+
+    <br>
+    <label>
+      <input type="radio" name="fruits"/>
+      Apple
+    </label>
+    <label>
+      <input type="radio" name="fruits"/>
+      Banana
+    </label>
+    
+    <br>
+    <br>
+    <table>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td colspan="2">D</td>
+      </tr>
+    </table>
+
+    <br>
+    <div data-fruit-name="apple">사과</div>
+    <div data-fruit-name="banana">바나나</div>
+  </body>
+</html>

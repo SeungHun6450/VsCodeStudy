@@ -1,0 +1,89 @@
+/* @import url("./box.css"); */
+/* div{
+  font-size : 100px;
+} */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* transition : 1s; */
+}
+
+.box::before{
+  content:"앞이란다!";
+}
+.box::after{
+  content:"뒤란다!";
+  display:block;
+  width : 30px;
+  height: 30px;
+  background-color: royalblue;
+}
+
+/* .box:hover{ 
+  width: 300px;
+  background-color: royalblue;
+} */
+
+/* .box:active{ 클릭 시 변경
+  width: 300px;
+  background-color: royalblue;
+}  */
+
+/* input {
+
+} */
+
+input:focus{
+  background-color: orange;
+}
+
+[disabled] {
+  color : red;
+}
+[type="password"]{
+  color : red;
+}
+
+[type="text"]{
+  background-color: orange;
+}
+[data-fruit-name]{
+  color:royalblue;
+}
+
+.animal > div{
+  color:red;
+}
+
+.parent{
+  width: 300px;
+  height: 200px;
+  background-color: red;
+}
+
+.child {
+  width: 100px;
+  height: inherit; /*강제 상속*/
+  background-color: orange;
+  position:fixed;
+  top:100px;
+  right:10px;
+}
+
+
+div{
+  font-size : 70px;
+}
+
+.hello{
+  color:red;
+}
+
+#hello{
+  color:green;
+}
+
+#hello{
+  color:blue !important;
+}

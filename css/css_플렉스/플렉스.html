@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+  <link rel="stylesheet" href="./플렉스.css">
+</head>
+<body>
+  <!--
+  flex : display:flex;로 선언하면 Flex Container가 되고 그 자식요소는 item이 된다.
+  container과 item에 부여할 수 있는 속성은 다르다
+   - flex container : display, flex-flow, flex-direction, flex-wrap, justify content, align-content, align-items
+   - flex item : order, flex, flex-frow, flex-shrink, flex-basis, align-self
+  
+   display : Flex Container의 화면 출력 특성 
+    - flex :블록 요소와 같이 Flex Container 정의
+    - inline-flex : 인라인 요소와 같이 Flex Container 정의
+
+   flex-direction : 주 축을 설정
+    - row : 기본 값 행 축 (좌->우)
+    - row-reverse : 행 축 (우->좌)
+    - column : 열 축 (위->아래)
+    - column-reverse : 열 축 (아래->위)
+      x축 : Main-axis. y축 : Cross-axis, 시작점 : flex-start, 끝점 : flex-end
+  
+   flex-wrap : Flex Items 묶음(줄바꿈)여부, flex-container에서는 한 container 안에 전부 넣으려고 한다
+    - nowrap : 기본 값, 묶음 줄(줄바꿈) 없음
+    - wrap : 여러 줄로 묶음
+    - wrap-reverse : wrap 반대 방향으로 묶음
+
+   justify-content : 주 축의 정렬 방법
+    - flex-start : 기본 값, Flex Items를 시작점으로 정렬
+    - flex-end : Flex Items를 끝점으로 정렬
+    - center : Flex Items를 가운데 정렬
+
+   align-content : 교차(수직) 축의 ★여러 줄(수평) 정렬 방법
+    - stretch : 기본 값, Flex Items를 시작점으로 정렬
+    - flex-start : 기본 값, Flex Items를 시작점으로 정렬
+    - flex-end : Flex Items를 끝점으로 정렬
+    - center : Flex Items를 가운데 정렬, 두 줄 이상, 위 아래 여백이 있어야 적용 됨
+
+   align-items : 교차 축의 ★한 줄 정렬 방법
+    - stretch : 기본 값, Flex Items를 교차 축으로 늘림
+    - flex-start : 기본 값, Flex Items를 각 줄 시작점으로 정렬
+    - flex-end : Flex Items를 각 줄 끝점으로 정렬
+    - center : Flex Items를 각 줄 가운데 정렬
+    - baseline : Flex Items를 각 줄의 문자 기준선에 정렬
+
+   order : Flex Item의 순서
+    - 0 : 기본 값, 순서 없음, 숫자가 작을수록 먼저
+
+   flex-grow : Flex Item의 증가 너비 비율
+    - 0 : 기본 값, 증가 비율 없음, 숫자는 증가 비율
+
+   flex-shrink : Flex Item의 감소 너비 비율
+    - 1 : 기본 값, Flex Container 너비에 따라 감소 비율 적용, 숫자는 감소 비율, 0은 감소 안한다는 것(감소 너비 사용x)
+    
+    플렉스 정렬(Item)강의 참고
+   flex-basis : Flex Item의 공간 배분 전 기본 너비 
+    - auto : 기본 값, 요소의 Content(내용) 너비
+  -->
+
+ 
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <!-- <div class="item">4</div>
+      <div class="item">5</div> -->
+    </div>
+
+</body>
+</html>

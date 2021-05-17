@@ -1,0 +1,17 @@
+.container .item{
+  width:100px;
+  height:100px;
+  background-color: orange;
+}
+
+.container .item:first-child{
+  border : 10px dashed red;
+}
+
+.radius{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 20px;
+  border-radius: 10px;
+}

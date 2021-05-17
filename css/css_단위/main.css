@@ -1,0 +1,15 @@
+html{
+  font-size: 16px;
+}
+
+.parent{
+  width: 300px;
+  height:200px;
+  background-color: royalblue;
+}
+
+.child{
+  width: 50vw;
+  height: 100vh;
+  background-color: orange;
+}

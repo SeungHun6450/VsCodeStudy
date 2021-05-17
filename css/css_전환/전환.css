@@ -1,0 +1,16 @@
+div{
+  width:100px;
+  height: 100px;
+  background-color: orange;
+  /* transition: 
+    width .1s 
+    , background-color 2s; */
+    
+    /*2번째는 대기시간*/
+    transition : 1s .5s;
+}
+
+div:active{
+  width:300px;
+  background-color: royalblue;
+}

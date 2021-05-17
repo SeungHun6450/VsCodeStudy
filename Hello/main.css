@@ -1,0 +1,27 @@
+body{
+  font-size : 30px;
+}
+/* span{
+  color:red;
+} */
+.red {
+  color:red;
+}
+table{
+
+}
+tr{
+
+}
+td{
+  border : 1px solid red;
+  padding : 10px;
+}
+
+#abc{
+  color:aqua;
+}
+
+#def{
+  color:blue;
+}
