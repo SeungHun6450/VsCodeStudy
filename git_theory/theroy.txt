@@ -1,0 +1,41 @@
+#개행문자(New line) 설정
+## macOs
+$ git config --global core.autocrlf input
+## windows
+$ git config --global core.autocrlf true
+
+* -- : 플래그, config의 세부 옵션이라 생각
+* 위의 구성옵션마다 다른 옵션으로 추가, crlf를 운영체제에 맞춰 변환
+* global : 전역변수
+
+# 사용자 정보
+## 커밋(버전생성)을 위한 정보 등록
+$ git config --global user.name 'YOUR_NAME'
+$ git config --global user.email 'YOUR_EMAIL'
+
+# 구성 확인
+## Q키를 눌러서 종효
+$ fit config --global --list
+
+#----------------#
+# 버전 관리 시작 (GitHub)
+
+# 1. 현재 프로젝트에서 변경사항 추적(버전 관리)를 시작
+$ git init
+-> master 브랜치가 생성
+
+# 변경사항을 추적할 특정 파일(index.html)을 지정
+$ git add index.html
+-> 버전으로 만들 준비 중 = 추적 중(stage)
+
+# 2. 모든 파일의 변경사항을 추적하도록 지정
+$ git add .
+
+# 3. 메세지(-m)와 함께(commit 시 수정 내용 기입을 위해 생성) 버전을 생성
+$ git commit -m '프로젝트 생성(OO내용 추가)'
+
+# 4. origin이란 별칭으로 원격 저장소를 연결
+$ git remote add origin https://github.com/...
+
+# 5. origin이란 별칭을 원격 저장소(github)로 버전 내역 전송
+$ git push origin master

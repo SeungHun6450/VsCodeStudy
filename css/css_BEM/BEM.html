@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=4, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    BEM (Block Element Modifier) : HTML 클래스 속성의 작명법
+     요소__일부분 : Underscore(Lodash) 기호로 요소의 일부분임을 표시
+     요소--상태 : Hyphen(Dash) 기호로 요소의 상태를 표시
+  -->
+  <!-- 
+    <div class="container">
+    <div class="name">
+      <div class="item">
+        <div class="name"></div>
+      </div>
+    </div>
+  </div>
+  이것을 바로 아래와 같이 해준다 
+-->
+<div class="container">
+  <div class="container__name">
+    <div class="item">
+      <div class="item__name"></div>
+    </div>
+  </div>
+</div>
+<!--
+  <div class="btn primary"></div>
+  <div class="btn success"></div>
+  <div class="btn error"></div>
+  이것을 바로 아래와 같이 해준다
+-->
+<div class="btn btn--primary"></div>
+<div class="btn btn--success"></div>
+<div class="btn btn--error"></div>
+
+
+</body>
+</html>
